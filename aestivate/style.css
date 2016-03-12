@@ -1063,6 +1063,117 @@ object
 	{
 	display: block;
 	}
+	
+/*--------------------------------------------------------------
+## My Addon Styles
+--------------------------------------------------------------*/
+html, body
+	{
+	font-size:        1em;
+	font-family:      'Open Sans', sans-serif;
+	color:            #9EA3A5;
+	background:       url("images/background.jpg") no-repeat center top fixed;
+	background-color: #EEEEEE;
+	}
+
+h1, h2, h3, h4, h5, h6
+	{
+	color: #D2C970;
+	}
+
+br
+	{
+	clear: both;
+	}
+
+.box
+	{
+	background: #FFFFFF;
+	width:      960px;
+	margin:     10px auto;
+	padding:    20px;
+	}
+
+.top-green-border
+	{
+	border-top: 5px solid #BCE623;
+	}
+
+/* -------------------- HEADER STYLES -------------------- */
+#search-widget .widget, #search-widget .fa-search
+	{
+	float: right;
+	}
+
+#search-widget .fa-search
+	{
+	margin: 10px;
+	}
+
+#search-widget input[type="submit"]
+	{
+	display: none;
+	}
+
+#logo
+	{
+	width:         15%;
+	margin-bottom: 10px;
+	border-radius: 60%
+	}
+
+.site-branding
+	{
+	text-align:  center;
+	line-height: 5px;
+	margin:      5px;
+	}
+
+header .site-title a:link, header .site-title a:visited
+	{
+	color:           #564634;
+	font-size:       3em;
+	font-weight:     bold;
+	text-decoration: none;
+	}
+
+header .site-description
+	{
+	color:       #A59E8D;
+	font-weight: bold;
+	}
+
+#site-navigation
+	{
+	background-color: #6B5F53;
+	}
+
+#primary-menu li
+	{
+	padding: 10px;
+	}
+
+#primary-menu a:link, #primary-menu a:visited
+	{
+	color:           #FFFFFF;
+	font-size:       1.2em;
+	text-decoration: none;
+	}
+
+#primary-menu li:hover
+	{
+	background-color: #BCE623;
+	}
+
+#primary-menu li:hover a:link, #primary-menu li:hover.current-menu-item a:link
+	{
+	color: #FFFFFF;
+	}
+
+#primary-menu li.current-menu-item a:link
+	{
+	color: #BCE623;
+	}
 
 /* -------------------- NEWS STYLES -------------------- */
 .news-section
@@ -1074,7 +1185,7 @@ object
 .recent-post
 	{
 	width:      300px;
-	height:     600px;
+	height:     425px;
 	padding:    10px;
 	margin:     5px;
 	float:      left;
@@ -1108,6 +1219,7 @@ object
 	}
 
 /* -------------------- CONTENT STYLES -------------------- */
+
 .entry-header .entry-title
 	{
 	margin-bottom: 0px;
@@ -1134,7 +1246,7 @@ object
 	float:   none;
 	padding: 0px;
 	}
-	
+
 #secondary
 	{
 	width:        30%;
@@ -1154,6 +1266,7 @@ object
 	}
 
 /* -------------------- FOOTER STYLES -------------------- */
+
 footer
 	{
 	background-color: #FFFFFF;
