@@ -14,11 +14,22 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'aestivate' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'aestivate' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'aestivate' ), 'aestivate', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
+		<!-- #site-info -->
+        <div class="site-info">
+        
+        	<div class="site-title">
+					<?php bloginfo( 'name' ); ?>
+				</div>
+
+				<nav id="footer-navigation" class="main-navigation" role="navigation">
+					<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'menu_id' => 'footer-menu' ) ); ?>
+				</nav>        
+		</div>
+        <!-- .site-info -->
+        
+        
+        
+        
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
