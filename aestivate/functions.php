@@ -41,6 +41,7 @@ function aestivate_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size("banner", 920, 400, true);
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -147,9 +148,26 @@ add_action( 'wp_enqueue_scripts', 'aestivate_scripts' );
  */
 function new_excerpt_length($length)
 {
-	return 20;
+	return 30;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
+
+/**
+ * Sets text color based on customizer option
+ *
+ */
+function customizer_text_color( )
+{
+?>
+	<style type="text/css">
+		html, body
+		{
+			color: <?php print(get_theme_mod("text_color_setting")) ?>;
+		}
+	</style>
+<?php
+}
+add_filter('wp_head', 'customizer_text_color');
 
 
 /**
