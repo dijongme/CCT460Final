@@ -11,28 +11,35 @@
 
 ?>
 
-	</div><!-- #content -->
-
+	</div>	
+    <!-- //CONTENT -->
+    <!-- //BOX -->
+	<!-- COLOPHON -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<!-- #site-info -->
+    <!-- BOX -->
+	<div class="box">
+		<!-- SITE-INFO -->
         <div class="site-info">
-        
-        	<div class="site-title">
+        <div class="site-title">
 					<?php bloginfo( 'name' ); ?>
 				</div>
 
 				<nav id="footer-navigation" class="main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'menu_id' => 'footer-menu' ) ); ?>
 				</nav>        
-		</div>
-        <!-- .site-info -->
+		
+        		<div class="copyright">
+					&copy; <?php print(date("Y") . " " . get_theme_mod("copyright_setting")) ?>
+				</div>
+			</div>
+			<!-- //SITE-INFO -->
+        	</div>
+			<!-- //BOX -->
+		</footer>
+		<!-- //COLOPHON -->
+	</div>
+	<!-- //PAGE -->
         
-        
-        
-        
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
 <?php wp_footer(); ?>
 
 </body>
