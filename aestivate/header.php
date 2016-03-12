@@ -31,11 +31,14 @@
 	<header id="masthead" class="site-header" role="banner">
 <!--Sidebar-search-->
 <div id="search-widget">
+<i class="fa fa-search"></i>
 <?php dynamic_sidebar( 'sidebar-search' ); ?>
 </div>
 <br>
 <!--site branding-->
 		<div class="site-branding">
+		<img id="logo" src="<?php print(wp_get_attachment_url(get_theme_mod("logo_setting"))) ?>" />	
+			
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
