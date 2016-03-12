@@ -50,7 +50,12 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+    
 <?php
-get_sidebar();
+//Prevents sidebar from being displayed if its the main blog page
+if(!is_home( ))
+	{
+	get_sidebar();
+	}
+
 get_footer();
