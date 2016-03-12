@@ -24,7 +24,17 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aestivate' ); ?></a>
 
+<!--BOX-->
+<div class="box top-green-border">
+
+<!--Masthead-->
 	<header id="masthead" class="site-header" role="banner">
+<!--Sidebar-search-->
+<div id="search-widget">
+<?php dynamic_sidebar( 'sidebar-search' ); ?>
+</div>
+<br>
+<!--site branding-->
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
@@ -40,7 +50,7 @@
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
-
+<br>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'aestivate' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
