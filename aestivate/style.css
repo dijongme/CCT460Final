@@ -924,3 +924,136 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/* Megan's styles*/
+
+html, body
+{
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	color: #9EA3A5;
+	background-color: #EEEEEE;
+	background: url("images/backgroundtest.jpg") no-repeat center top fixed;
+}
+
+br
+{
+	clear: both;
+}
+.box
+{
+	background: white; 
+	width: 960px;
+	margin: 10px auto;
+	padding: 20px; 
+}
+
+.top-green-border
+{
+	border-top: 5px solid #BCE623;
+}
+/**header style**/
+header
+{
+	text-align: center;
+}
+
+#search-widget
+{
+	float: right; 
+}
+
+#search-widget input[type="submit"] 
+{
+	display: none; 
+}
+
+.site-branding
+{
+	line-height: 5px;
+	margin: 5px;
+}
+
+header .site-title a:link, header .site-title a:visited
+{
+	color: #564634;
+	font-size: 3em;
+	font-weight: bold; 
+	text-decoration: none;
+}
+
+header .site-description
+{
+	color: #A59E8D;
+	font-weight: bold; 
+}
+
+#site-navigation
+{
+	background-color: #6B5f53;
+}
+
+#primary-menu li
+{
+	padding: 10px;
+}
+
+#primary-menu a:link, #primary-menu a:visited
+{
+	color: #FFFFFF;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+#primary-menu li:hover a:link, #primary-menu li:hover.current-menu-item a:link
+{
+	color:#FFFFFF;
+}
+#primary-menu li.current-menu-item a:link
+{
+	color: #BCE623;
+
+}
+
+.news-section
+{
+	width:  930px;
+	margin: 0 auto;
+}
+
+.recent-post
+{
+	width:      300px;
+	height:     425px;
+	padding:    10px;
+	margin:     5px;
+	float:      left;
+	border:     1px solid #CCCCCC;
+	box-shadow: 0px 5px 5px #CCCCCC;
+}
+
+.recent-post h3 a:link, .recent-post h3 a:visited
+{
+	color:           #D2C970;
+	font-style:      italic;
+	text-decoration: none;
+}
+
+.recent-post h3 a:hover
+{
+	text-decoration: underline;
+}
+
+.prev-next-links
+{
+	margin-top: 10px;
+}
+
+.prev-next-links i
+{
+	color:            #FFFFFF;
+	background-color: #6B5F53;
+	margin-left:      5px;
+	padding:          10px;
+}
+
+
