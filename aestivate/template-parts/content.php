@@ -6,7 +6,6 @@
  *
  * @package aestivate
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -23,25 +22,58 @@
 			<?php aestivate_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php
-		endif; ?>
+		endif;
+		?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content <?php if(is_home( ) || is_author( )) print('entry-page') ?>">
 		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'aestivate' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
+			//Displays featured image if its set
+			if(has_post_thumbnail( )) :
+				the_post_thumbnail("banner");
+			endif;
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'aestivate' ),
-				'after'  => '</div>',
-			) );
+			//Prints excerpt only if its on the main blog page or author page
+			if(is_home( ) || is_author( ))
+			{
+		?>
+				<?php the_excerpt( ) ?>
+		<?php
+			}
+			else
+			{
+				the_content( sprintf(
+					/* translators: %s: Name of current post. */
+					wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'my-theme' ), array( 'span' => array( 'class' => array() ) ) ),
+					the_title( '<span class="screen-reader-text">"', '"</span>', false )
+				) );
+
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'aestivate' ),
+					'after'  => '</div>',
+				) );
+			}
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php aestivate_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	<?php
+		//Prevents sidebar from being displayed if its the main blog page or author page
+		if(!is_home( ) && !is_author( ))
+			get_sidebar();
+	?>
+
+	<?php
+		//Prevents footer from being displayed if its the main blog page or author page
+		if(!is_home( ) && !is_author( ))
+		{
+	?>
+			<footer class="entry-footer">
+				<?php aestivate_entry_footer(); ?>
+			</footer><!-- .entry-footer -->
+	<?php
+		}
+	?>
 </article><!-- #post-## -->
+
+
+
