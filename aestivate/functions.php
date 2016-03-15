@@ -102,7 +102,7 @@ add_action( 'after_setup_theme', 'aestivate_content_width', 0 );
 function aestivate_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'aestivate' ),
-		'id'            => 'sidebar-1',
+		'id'            => 'sidebar-1',`
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
