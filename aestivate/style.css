@@ -1,11 +1,11 @@
 /*
-Theme Name: aestivate
-Theme URI: http://underscores.me/
-Author: Zhuoqiao Li, Tianyi Liu, Megan Dijong
-Author URI: http://underscores.me/
-Description: Assignment#2: Create a WordPress Theme
-Version: 1.0.0
-License: GNU General Public License v2 or later
+Theme Name:  aestivate
+Theme URI:   http://underscores.me/
+Author:      Zhuoqiao Li, Tianyi Liu, Megan Dijong
+Author URI:  http://underscores.me/
+Description: Work as a group, and create a Wordpress theme for our fictitious client using the Underscores theme as a starting point.
+Version:     1.0.0
+License:     GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: aestivate
 Tags:
@@ -47,20 +47,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-html 
+html
 	{
-	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust:     100%;
 	}
 
-h1, h2, h3, h4, h5, h6
-	{
-	color: #D2C970;
-	}
-
-
-body 
+body
 	{
 	margin: 0;
 	}
@@ -97,8 +90,8 @@ audio:not([controls])
 	}
 
 [hidden],
-template 
-	{
+template
+	 {
 	display: none;
 	}
 
@@ -108,7 +101,7 @@ a
 	}
 
 a:active,
-a:hover 
+a:hover 	
 	{
 	outline: 0;
 	}
@@ -123,7 +116,7 @@ strong
 	{
 	font-weight: bold;
 	}
-	
+
 dfn 
 	{
 	font-style: italic;
@@ -160,7 +153,8 @@ sup
 	top: -0.5em;
 	}
 
-sub {
+sub 
+	{
 	bottom: -0.25em;
 	}
 
@@ -169,23 +163,24 @@ img
 	border: 0;
 	}
 
-svg:not(:root) 
-	{
+svg:not(:root)
+ 	{
 	overflow: hidden;
 	}
 
-figure 
-	{
+figure
+ 	{
 	margin: 1em 40px;
 	}
-
-hr 
-	{
+	
+hr
+ 	{
 	box-sizing: content-box;
 	height: 0;
-}
+	}
 
-pre {
+pre 
+	{
 	overflow: auto;
 	}
 
@@ -193,7 +188,7 @@ code,
 kbd,
 pre,
 samp 
-	{
+	{	
 	font-family: monospace, monospace;
 	font-size: 1em;
 	}
@@ -202,12 +197,12 @@ button,
 input,
 optgroup,
 select,
-textarea 
+textarea
 	{
 	color: inherit;
 	font: inherit;
 	margin: 0;
-}	
+	}
 
 button 
 	{
@@ -224,7 +219,7 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] 
-	{
+	{	
 	-webkit-appearance: button;
 	cursor: pointer;
 	}
@@ -267,13 +262,13 @@ input[type="search"]
 	}
 
 input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration 
-	{
+input[type="search"]::-webkit-search-decoration
+	 {
 	-webkit-appearance: none;
 	}
 
-fieldset 
-	{
+fieldset
+	 {
 	border: 1px solid #c0c0c0;
 	margin: 0 2px;
 	padding: 0.35em 0.625em 0.75em;
@@ -285,7 +280,7 @@ legend
 	padding: 0;
 	}
 
-textarea 
+textarea
 	{
 	overflow: auto;
 	}
@@ -302,7 +297,8 @@ table
 	}
 
 td,
-th {
+th 
+	{
 	padding: 0;
 	}
 
@@ -408,7 +404,9 @@ html
 *,
 *:before,
 *:after 
-	{ /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	{ 
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see
+	http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
 	}
 
@@ -426,7 +424,7 @@ q:after
 	}
 
 blockquote,
-q
+q 
 	{
 	quotes: "" "";
 	}
@@ -445,7 +443,7 @@ ol
 	margin: 0 0 1.5em 3em;
 	}
 
-ul 	
+ul 
 	{
 	list-style: disc;
 	}
@@ -594,7 +592,7 @@ input[type="color"]
 	}
 
 textarea 
-	{
+		{
 	padding-left: 3px;
 	width: 100%;
 	}
@@ -636,7 +634,7 @@ a:active
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation 
+.main-navigation
 	{
 	clear: both;
 	display: block;
@@ -654,8 +652,9 @@ a:active
 
 .main-navigation li 
 	{
-	float: left;
+	float: none;
 	position: relative;
+	border-bottom: solid 1px;
 	}
 
 .main-navigation a 
@@ -684,16 +683,17 @@ a:active
 	{
 	width: 200px;
 	}
-
+	
 .main-navigation ul ul li 
 	{
+
 	}
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a 
 	{
 	}
-
+		
 .main-navigation ul ul :hover > a,
 .main-navigation ul ul .focus > a 
 	{
@@ -706,7 +706,7 @@ a:active
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul 
-	{
+	{		
 	left: auto;
 	}
 
@@ -724,23 +724,31 @@ a:active
 	}
 
 /* Small menu. */
-.menu-toggle,
+.menu-toggle
+	{
+	display: none;
+	float: right;
+	}
+
 .main-navigation.toggled ul 
 	{
 	display: block;
+	text-align: center;
+	border-bottom: 1px solid #fff;
 	}
-
+	
 @media screen and (min-width: 37.5em) 
-	{
+	{	
 	.menu-toggle 
 		{
 		display: none;
 		}
-	.main-navigation ul 
+	.main-navigation ul
 		{
 		display: block;
+		text-align:center;
 		}
-	}		
+	}
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -810,8 +818,8 @@ a:active
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-.alignleft 
-	{
+.alignleft
+	 {
 	display: inline;
 	float: left;
 	margin-right: 1.5em;
@@ -870,13 +878,13 @@ a:active
 	{
 	margin: 0 0 1.5em;
 	}
-
+	
 /* Make sure select elements fit in widgets. */
 .widget select 
 	{
 	max-width: 100%;
 	}
-
+	
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -897,7 +905,7 @@ a:active
 .updated:not(.published) 
 	{
 	display: none;
-	}
+	}	
 
 .single .byline,
 .group-blog .byline 
@@ -922,7 +930,7 @@ a:active
 ## Asides
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
-.archive .format-aside .entry-title 
+.archive .format-aside .entry-title
 	{
 	display: none;
 	}
@@ -946,7 +954,8 @@ a:active
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
 .infinite-scroll.neverending .site-footer 
-	{ /* Theme Footer (when set to scrolling) */
+	{ 
+	/* Theme Footer (when set to scrolling) */
 	display: none;
 	}
 
@@ -986,7 +995,7 @@ object
 	max-width: 100%;
 	}
 
-.wp-caption img[class*="wp-image-"]
+.wp-caption img[class*="wp-image-"] 
 	{
 	display: block;
 	margin-left: auto;
@@ -1021,7 +1030,7 @@ object
 
 .gallery-columns-2 .gallery-item 
 	{
-	max-width: 50%;
+	max-width: 50%;	
 	}
 
 .gallery-columns-3 .gallery-item 
@@ -1063,9 +1072,9 @@ object
 	{
 	display: block;
 	}
-	
+
 /*--------------------------------------------------------------
-## My Addon Styles
+## New Styles for aestivate
 --------------------------------------------------------------*/
 html, body
 	{
@@ -1123,11 +1132,11 @@ br
 	}
 
 .site-branding
-	{
+{
 	text-align:  center;
 	line-height: 5px;
 	margin:      5px;
-	}
+}
 
 header .site-title a:link, header .site-title a:visited
 	{
@@ -1147,10 +1156,10 @@ header .site-description
 	{
 	background-color: #6B5F53;
 	}
-
+	
 #primary-menu li
 	{
-	padding: 10px;
+	padding: 5px;
 	}
 
 #primary-menu a:link, #primary-menu a:visited
@@ -1185,7 +1194,7 @@ header .site-description
 .recent-post
 	{
 	width:      300px;
-	height:     700px;
+	height:     600px;
 	padding:    10px;
 	margin:     5px;
 	float:      left;
@@ -1219,7 +1228,6 @@ header .site-description
 	}
 
 /* -------------------- CONTENT STYLES -------------------- */
-
 .entry-header .entry-title
 	{
 	margin-bottom: 0px;
@@ -1266,7 +1274,6 @@ header .site-description
 	}
 
 /* -------------------- FOOTER STYLES -------------------- */
-
 footer
 	{
 	background-color: #FFFFFF;
@@ -1290,8 +1297,10 @@ footer .site-title
 
 #footer-menu li
 	{
+	display: inline-block;
 	padding:      10px;
 	border-right: 1px solid #9EA3A5;
+	border-bottom:0px solid #9EA3A5;
 	}
 
 #footer-menu a:link, #footer-menu a:visited
@@ -1310,3 +1319,75 @@ footer .copyright
 	float:   right;
 	padding: 10px;
 	}
+
+
+/* -------------------- max-width: 750px version -------------------- */
+@media screen and (max-width: 750px) 
+	{
+	.menu-toggle
+		{
+		display: block;
+		float: right;
+		}
+	
+	.menu-toggle img 
+		{
+   		width: 1.8em;
+		}
+	
+	.main-navigation ul
+		{
+		display: none;
+		}
+	
+	div.box
+		{
+		width: 100%;
+		}
+	
+	div.news-section
+		{
+		width:100%;
+		}
+	
+	div.site-branding
+		{
+		width:100%;
+		}
+	
+	div.recent-post, div.recent-post img
+		{
+		width: 100%;
+		height: inherit;
+		text-align: center
+		}
+
+	div.entry-content, div.entry-content img
+		{
+		width:100%;
+		}
+		
+	#secondary
+		{
+		display: none;
+		}
+	}
+
+@media screen and (max-width: 450px) 
+	{
+		p.site-title
+		{
+		font-size:9px;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
