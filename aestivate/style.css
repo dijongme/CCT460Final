@@ -13,7 +13,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-aestivate is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Aestivate is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -1087,7 +1087,7 @@ html, body
 
 h1, h2, h3, h4, h5, h6
 	{
-	color: #D2C970;
+	color: #000000;
 	}
 
 br
@@ -1098,14 +1098,14 @@ br
 .box
 	{
 	background: #FFFFFF;
-	width:      960px;
+	width:      900px;
 	margin:     10px auto;
 	padding:    20px;
 	}
 
 .top-green-border
 	{
-	border-top: 5px solid #BCE623;
+	border-top: 5px solid #000000
 	}
 
 /* -------------------- HEADER STYLES -------------------- */
@@ -1126,7 +1126,7 @@ br
 
 #logo
 	{
-	width:         15%;
+	width: 70%;
 	margin-bottom: 10px;
 	border-radius: 60%
 	}
@@ -1148,13 +1148,13 @@ header .site-title a:link, header .site-title a:visited
 
 header .site-description
 	{
-	color:       #A59E8D;
+	color:       #000000;
 	font-weight: bold;
 	}
 
 #site-navigation
 	{
-	background-color: #6B5F53;
+	background-color: black;
 	}
 	
 #primary-menu li
@@ -1187,14 +1187,14 @@ header .site-description
 /* -------------------- NEWS STYLES -------------------- */
 .news-section
 	{
-	width:  930px;
+	width:  870px;
 	margin: 0 auto;
 	}
 
 .recent-post
 	{
-	width:      300px;
-	height:     600px;
+	width:      280px;
+	height:     300px;
 	padding:    10px;
 	margin:     5px;
 	float:      left;
@@ -1242,7 +1242,7 @@ header .site-description
 
 .entry-content
 	{
-	width:         70%;
+	width:         100%;
 	float:         left;
 	padding-right: 10px;
 	margin:        0px;
@@ -1261,6 +1261,7 @@ header .site-description
 	float:        left;
 	padding-left: 10px;
 	border:       1px solid #CCCCCC;
+	display: 	  none;
 	}
 
 #secondary h2
