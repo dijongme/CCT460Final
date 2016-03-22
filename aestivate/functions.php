@@ -40,13 +40,18 @@ function aestivate_setup() {
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
+	 
+	 /* to add featured image */
 	add_theme_support( 'post-thumbnails' );
-	add_image_size("banner", 920, 400, true);
+		add_image_size("banner", 920, 400, true);
+
+
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'aestivate' ),
 		'footer-menu' => esc_html__( 'Footer Menu', 'aestivate' )
+
 	) );
 
 	/*
@@ -102,7 +107,7 @@ add_action( 'after_setup_theme', 'aestivate_content_width', 0 );
 function aestivate_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'aestivate' ),
-		'id'            => 'sidebar-1',`
+		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
@@ -124,16 +129,17 @@ add_action( 'widgets_init', 'aestivate_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function aestivate_scripts() 
-{
+function aestivate_scripts() {
 	wp_enqueue_style( 'aestivate-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'google-font', 'https://fonts.googleapis.com/css?family=Open+Sans');
 	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 
-	//Scripts for the menu button
-	wp_enqueue_script( 'my-script', get_template_directory_uri()  . '/js/script.js', array('jquery'));
 	wp_enqueue_script( 'aestivate-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+
 	wp_enqueue_script( 'aestivate-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	
+	
+	
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -147,7 +153,7 @@ add_action( 'wp_enqueue_scripts', 'aestivate_scripts' );
  */
 function new_excerpt_length($length)
 {
-	return 0;
+	return 20;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
 
@@ -167,6 +173,9 @@ function customizer_text_color( )
 <?php
 }
 add_filter('wp_head', 'customizer_text_color');
+
+
+
 
 
 /**
