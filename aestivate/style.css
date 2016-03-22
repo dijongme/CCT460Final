@@ -654,7 +654,7 @@ a:active
 	{
 	float: none;
 	position: relative;
-	border-bottom: solid 1px;
+	border-bottom: solid 1px #fff;
 	}
 
 .main-navigation a 
@@ -884,7 +884,11 @@ a:active
 	{
 	max-width: 100%;
 	}
-	
+#secondary.widget-area
+	{
+	float:right;
+	}
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1112,6 +1116,7 @@ br
 #search-widget .widget, #search-widget .fa-search
 	{
 	float: right;
+	
 	}
 
 #search-widget .fa-search
@@ -1184,6 +1189,8 @@ header .site-description
 	color: #BCE623;
 	}
 
+
+
 /* -------------------- NEWS STYLES -------------------- */
 .news-section
 	{
@@ -1241,12 +1248,12 @@ header .site-description
 	}
 
 .entry-content
-	{
-	width:         100%;
+{
+	width:         70%;
 	float:         left;
 	padding-right: 10px;
 	margin:        0px;
-	}
+}
 
 .entry-page
 	{
@@ -1256,13 +1263,13 @@ header .site-description
 	}
 
 #secondary
-	{
+{
 	width:        30%;
 	float:        left;
 	padding-left: 10px;
 	border:       1px solid #CCCCCC;
-	display: 	  none;
-	}
+	display: 	  block;
+}
 
 #secondary h2
 	{
@@ -1273,6 +1280,17 @@ header .site-description
 	{
 	margin: 0;
 	}
+	
+.widget-area
+	{
+	width:       	25%;
+	float:        right;
+	padding-left: 10px;
+	border:       1px solid #CCCCCC;
+	display: 	  block;
+	}
+
+
 
 /* -------------------- FOOTER STYLES -------------------- */
 footer
@@ -1370,7 +1388,8 @@ footer .copyright
 		
 	#secondary
 		{
-		display: none;
+		display: block;
+		width:100%;
 		}
 	}
 
@@ -1381,8 +1400,6 @@ footer .copyright
 		font-size:9px;
 		}
 	}
-
-
 
 
 
